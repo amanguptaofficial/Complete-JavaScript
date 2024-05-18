@@ -7,3 +7,9 @@ function sayHello(params) {
 }
 
 sayHello()
+
+function sayBye(params) {
+    
+    console.log("added by your friend");
+    
+}
