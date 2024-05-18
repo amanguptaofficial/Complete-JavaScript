@@ -1,15 +1,1 @@
-function sayHello(params) {
-    
-    console.log("new promise");
-    console.log("promise");
-
-
-}
-
-sayHello()
-
-function sayBye(params) {
-    
-    console.log("added by your friend");
-    
-}
+// Start Leaning promise
