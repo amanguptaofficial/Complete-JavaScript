@@ -1,13 +1,5 @@
 function sayHello(params) {
-    
+    console.log("promise")
 }
 
-console.log("hello world....")
-console.log("hello world....")
-console.log("hello world....")
-console.log("hello world....")
-console.log("hello world....")
-console.log("hello world....")
-console.log("hello world....")
-console.log("hello world....")
-console.log("hello world....")
+sayHello()
