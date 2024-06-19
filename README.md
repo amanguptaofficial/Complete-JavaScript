@@ -1,21 +1,24 @@
-# Complete-JavaScript
-Hello Everyone, welcome to my JavaScript repository! Here, I upload all the tasks related to JavaScript. This repository is organized topic by topic, providing comprehensive code examples and explanations for each concept. 
-# Covered All Topic Related to JavaScript
+# Here i am learn how file system is work we a fs module for performing operation
 
-![Project Logo](javascript.jpg)
+## what is file handling ?
 
-## what we learn 
-- [Basic of Javascript](#usage)
-- [How Javascript works](#roadmap)
-- [All Array Function](#contributing)
-- [All Math function](#license)
-- [Higher Order Function](#contact)
-- [Array,Object,Functions,Rest Parameter](#acknowledgements)
+file handling means we can perform operation in the file.
+for example read a file and write a file.
 
-## About the Project
-  This is not a project; it is a learning process. I am studying all the concepts step by step and uploading my progress daily on GitHub.
+## first of all we need to import the fs module It is a in build module.
 
-Thank you 
-Aman Gupta
+```
+ const fs = require("fs");
 
-    
+```
+
+## now we are performing all operation in the file you can see all the operation in file System folder.
+
+-- How to create a file. (writeFile(), writeFileSync());
+-- how to read a file. (readFile(), readFileSync());
+-- how to add the text in the file.(appendFileSync());
+-- how to copy one file to another file.(cpSync());
+-- how to see this is a file or not.(isFile());
+-- how to see statics of the file.(startSync());
+
+i covered all the topic realated to file. and this is so benificial for me
