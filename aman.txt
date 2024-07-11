@@ -1,0 +1,44 @@
+/**
+ As we know that Node JS is a Single Threaded It has only one thread. It has only one thread that is known as main thread.
+ and so the client send the request to the server. now main thread come into the picture and main thread check the request
+ is a non blocking request or Blocking request if the request is a non blocking  then main thread send this request to the worker 
+ thread and worker thread responsible to complete this request  and when the request is completed then it come into the callback queue and event loop
+ come into the picture. It's continiously check the call stack and callback queue if the callstack is empty then it take the task form the 
+ callback queue and push insdie the call stack and if the task is blocking then main thread responsible to execute this task so here main thread is blocked 
+ until the operation completed successfully
+ so node js is good for non blocking I/O and not good for Blocking and
+  non blocking means when we are fetching data into the another server and when we are perform db operation
+  blocking means CPU intensive task like heavy calculation
+ 
+ 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu urna a velit suscipit gravida. Nam eget ullamcorper nisi. Quisque in odio libero. Aliquam eu tincidunt libero. Phasellus et nisi nec ligula lobortis viverra ac id arcu. Duis bibendum posuere ligula, nec fermentum ipsum feugiat nec. Sed id urna vitae elit lacinia fermentum. Nullam ac sapien ut metus aliquet tempor. Nullam ac velit ac purus tempus congue et in nulla. Donec faucibus odio velit, in bibendum eros viverra a.
+
+Sed dapibus odio id lectus ullamcorper, non gravida risus tincidunt. Morbi rhoncus elit non quam viverra feugiat. Duis condimentum auctor justo vitae fringilla. Cras pellentesque consequat justo a consequat. Suspendisse nec dui fringilla, elementum ligula vel, condimentum ex. Mauris non magna dapibus, molestie nunc at, consequat tellus. In quis posuere odio. Aenean molestie ut lorem vel efficitur.
+
+Etiam interdum dolor quis arcu consequat, nec sollicitudin enim placerat. Duis nec feugiat dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In et risus pretium, venenatis sem a, fermentum augue. Duis bibendum eleifend nulla vel gravida. Fusce vitae odio tortor. Nam fermentum nisl in elit fermentum, vel dapibus sem lobortis. Pellentesque quis libero sit amet augue consectetur suscipit.
+
+Praesent at consectetur enim. Pellentesque consequat nibh vitae ultricies consectetur. Duis eu malesuada enim. Cras euismod augue nunc, nec dignissim dui fermentum nec. Nullam a libero leo. Sed venenatis sapien in nisl accumsan varius. Aliquam nec nisi nulla. Integer consequat diam a nisi gravida, nec dignissim orci accumsan. Sed at tristique elit. Aliquam erat volutpat.
+
+Phasellus ut gravida felis. Proin sed ultricies erat. Aliquam ac tincidunt est. Aenean euismod vel velit non scelerisque. Donec vel feugiat mi. Nulla facilisi. Pellentesque feugiat nisi in ipsum tincidunt, in varius felis vehicula. Aliquam in massa vel purus egestas molestie. Vivamus ac faucibus leo. Etiam non turpis nec orci semper consequat. Fusce ut ante sit amet purus condimentum rhoncus. Curabitur quis nibh ac enim pharetra euismod.
+
+Curabitur non nisi a nunc ullamcorper ultricies. In lobortis justo sit amet arcu ultricies, id sagittis elit euismod. Vestibulum rutrum lectus ut purus feugiat volutpat. Duis fringilla consequat enim, in ullamcorper risus gravida sit amet. Sed sagittis, mauris a posuere scelerisque, magna ligula suscipit justo, at egestas neque metus a odio. Sed vitae lobortis purus. Donec ac condimentum leo. Fusce feugiat purus ut tortor maximus luctus.
+
+Nunc et commodo libero. Integer non venenatis libero, sed efficitur risus. Nulla sit amet nibh nisl. Quisque non lobortis tortor. Nam feugiat nulla at odio vehicula, sed consequat lorem iaculis. Aliquam ac tempor quam. Proin luctus ex eget purus pellentesque, in dignissim libero lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc sit amet libero et lectus pellentesque hendrerit vel at libero.
+
+Ut nec augue sed ipsum pharetra finibus. Phasellus interdum magna nec elit interdum, nec mollis orci facilisis. Proin eu volutpat nisl, et aliquam odio. Ut sollicitudin tincidunt mauris, id consequat metus tincidunt id. Morbi ullamcorper, ligula eget tincidunt efficitur, ligula ante fermentum lectus, in tincidunt metus risus quis purus. Mauris bibendum, velit vel feugiat egestas, justo eros dapibus mauris, sed ullamcorper sapien ante eu neque. Nulla sit amet eleifend eros. Sed eleifend lacus quis lectus rutrum, eget pretium risus feugiat.
+
+Duis non lacus non orci faucibus suscipit id at sapien. Proin eget sapien sed arcu pellentesque ultricies. Sed id eros consectetur, sodales metus a, mattis nulla. Ut pellentesque ullamcorper ex, sed rhoncus nisl suscipit nec. Sed ut justo euismod, sodales elit ut, bibendum libero. Nulla facilisi. Donec sollicitudin velit a fermentum lobortis. Vivamus sed ultrices tortor. Fusce nec ante vel orci condimentum vehicula.
+
+Nunc id augue justo. Mauris ac consequat ex. Integer eget metus sit amet ligula gravida varius. Nullam fermentum, ligula vel maximus rutrum, sem est feugiat purus, eu molestie eros odio sit amet purus. Sed non lobortis ante. Nam lacinia viverra felis non gravida. Sed egestas, nisi et elementum molestie, turpis felis interdum mi, nec pretium arcu augue in orci.
+
+Donec sit amet augue sit amet lectus posuere iaculis sed vel libero. Integer congue neque id augue tempor, id varius risus sagittis. Aenean dignissim eu nisl sit amet fermentum. Sed a nisl a elit maximus hendrerit. Proin eget tristique ligula. Ut vehicula dui quis metus convallis sodales. Sed dapibus sapien nec elit feugiat mollis. Suspendisse id dapibus mi. Suspendisse non malesuada dui. Proin a fringilla est.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Duis nec libero feugiat, bibendum dui ac, pharetra quam. Nullam eget sem sit amet lorem euismod dictum. Duis quis sapien id eros aliquam convallis. Suspendisse varius orci vitae est vulputate, sed sodales lorem lacinia. Nulla ac feugiat leo. Curabitur et neque nec arcu cursus rhoncus. Nulla feugiat odio id sapien tempor, in faucibus ligula egestas.
+
+Vestibulum ut nibh eu mauris fermentum interdum sit amet quis sapien. Mauris maximus lobortis enim, in convallis enim tristique nec. Vestibulum congue felis libero, in rhoncus ex lobortis id. Nulla lacinia lectus eu urna malesuada, non feugiat ligula congue. Nullam et efficitur sem. Suspendisse at maximus leo. Etiam non metus consectetur, elementum velit in, egestas sem.
+
+Sed quis leo nisl. Nullam accumsan sapien a risus elementum, sed lobortis velit placerat. Phasellus sed libero vel ex viverra malesuada. In semper sem nec risus pellentesque dictum. Integer dignissim tellus non neque gravida, in ultrices dui egestas. Sed interdum ante sed metus convallis tincidunt. Morbi id est libero. Nulla lobortis, felis sed iaculis pharetra, velit lectus blandit dui, nec vestibulum tellus est eget elit. Sed eget dolor vitae velit mollis aliquam eget et dui.
+
+Mauris id pretium lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet eros quis felis euismod sollicitudin. Integer eleifend, urna sit amet vestibulum suscipit, justo sapien vestibulum felis, eget tempus tortor ipsum sit amet est. Proin eleifend laoreet dui, eu dictum libero pretium nec. Pellentesque laoreet a erat nec vehicula. Integer eget justo et nunc scelerisque aliquet. Mauris ultricies, urna eu iaculis vehicula, tellus eros ullamcorper ipsum, non ullamcorper enim libero nec risus.
+
+Vivamus tempus, turpis sed tempus convallis, eros orci bibendum risus, id condimentum ex eros nec leo. Vestibulum pretium dui nec turpis suscipit varius. Donec maximus,

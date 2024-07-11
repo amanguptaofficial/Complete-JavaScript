@@ -1,17 +1,17 @@
 {
   "name": "complete-javascript",
   "version": "1.0.0",
-  "description": "\"here i am learning cors \"",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npx nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "\"aman gupta\"",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-status-monitor": "^1.3.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

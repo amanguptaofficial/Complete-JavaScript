@@ -1,20 +1,35 @@
 const express = require("express");
-const dotenv = require("dotenv");
-const cors = require("cors");
-
-console.log(cors());
-
-dotenv.config();
 const app = express();
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+const fs = require("fs");
+const status = require("express-status-monitor")
+const zlib = require("zlib");
+
+
+
+app.use(status());
 
 app.get("/", (req, res) => {
-  console.log(req.body);
-  res.send(req.body);
+  const data = fs.readFileSync("aman.txt","utf-8");
+  res.send(data);
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`The Backend Server listen at PORT ${process.env.PORT}`);
+app.get("/data",(req,res)=>{
+ const stream = fs.createReadStream("aman.txt","utf-8");
+   stream.on("data", (chunk)=>res.write(chunk));
+   stream.on("end",()=>res.end());
+})
+
+// write a api to convert a text to zip
+
+
+const stream = fs.createReadStream("aman.txt","utf-8")
+ stream.pipe(fs.createWriteStream("./akash.txt"))
+   
+
+ 
+
+
+
+app.listen(3000, () => {
+  console.log("server started at 3000");
 });
